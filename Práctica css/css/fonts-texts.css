@@ -1,0 +1,51 @@
+.font {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: sans-serif;
+  font-size: 32px;
+  font-weight: lighter;
+  font-style: oblique;
+  font-variant: small-caps;
+  line-height: 1.5;
+  font: italic small-caps bold 24px / 1.5 monospace; /*<=====respetar ese orden, pero es mejor ponerlos por partes como esta arriba*/
+}
+.text {
+  font-size: 2rem;
+  text-align: center;
+  text-decoration: none;
+  text-indent: 2rem;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  word-break: break-all;
+  writing-mode: vertical-lr;
+}
+.text-overflow {
+  background-color: palegreen;
+  border: thin solid goldenrod;
+  padding: 1rem;
+  width: 50%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.whitespace {
+  white-space: pre;
+}
+.word-spacing {
+  font-size: 2rem;
+  word-spacing: 1rem;
+}
+/*Para crear iconos*/
+.material-symbols-outlined {
+  font-family: "Material Symbols Outlined";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 50px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+}
+/**/

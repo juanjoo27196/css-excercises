@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Efectos Visuales en CSS</title>
+    <link rel="stylesheet" href="css/visual-effects.css" />
+  </head>
+  <body>
+    <h1>Efectos Visuales en CSS</h1>
+    <hr />
+    <h2>Sombras en CSS</h2>
+    <div class="box shadows"><p>Sombra</p></div>
+    <div class="box shadows-multiple"><p>Sombra múltiple</p></div>
+    <div class="box drop-shadow">
+      <img src="assets/it.png" alt="Pennywise con globo" />
+    </div>
+    <hr />
+    <h2>Degradados</h2>
+    <h3>Lineal</h3>
+    <div class="box linear-gradient"></div>
+    <h3>Radial</h3>
+    <div class="box radial-gradient"></div>
+    <h3>Cónico</h3>
+    <div class="box conic-gradient"></div>
+    <h3>Repetir degradados</h3>
+    <div class="box repeat-gradient-linear"></div>
+    <div class="box repeat-gradient-radial"></div>
+    <div class="box repeat-gradient-conic"></div>
+    <h3>Gráficas con degradados</h3>
+    <div class="box chart-gradient"></div>
+    <div class="box donut-gradient"></div>
+    <hr />
+    <h2>Filtros</h2>
+    <h3>Filtros</h3>
+    <p>
+      El filtro esta desactivado para que no se arrastre en el resto de cards
+      que trabaje
+    </p>
+    <article class="card">
+      <img src="assets/it.png" alt="Pennywise" />
+    </article>
+    <h3>Filtros múltiples</h3>
+    <article class="card-1">
+      <img class="filters-multiple" src="assets/it.png" alt="Pennywise" />
+    </article>
+    <h3>Filtros a fondo</h3>
+    <article class="cardrelative">
+      <img src="assets/it.png" alt="Pennywise" />
+      <div class="backdrop-filter">
+        <h4>Pennywise</h4>
+      </div>
+    </article>
+    <h3>Filtros múltiples a fondos</h3>
+    <article class="cardrelative">
+      <img src="assets/it.png" alt="Pennywise" />
+      <div class="backdrop-filter-multiple">
+        <h4>Pennywise</h4>
+      </div>
+    </article>
+    <hr />
+    <h2>Modos de mezcla</h2>
+    <h3>Sobre imágenes (img)</h3>
+    <article class="card-2 cardrelative blend-modes">
+      <img src="assets/puesta.png" alt="Puesta de sol" />
+      <img class="absolute" src="assets/arbol.png" alt="Árbol" />
+    </article>
+    <h3>Sobre imágenes de fondo (background-color)</h3>
+    <article class="card bg-blend-modes"></article>
+    <hr />
+    <h2>Máscaras</h2>
+    <article class="card clip-path">
+      <img src="assets/puesta.png" alt="Puesta de sol" />
+    </article>
+    <hr />
+    <h2>Formas</h2>
+    <article class="shapes">
+      <h3>Ejemplos de formas y siluetas entre textos e imágenes</h3>
+      <img
+        src="assets/puesta.png"
+        alt="Puesta de sol"
+        class="float-left shape-1"
+      />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
+        minima voluptatum eum consectetur deserunt, enim in tempore laboriosam?
+        Quam rerum fugit quis assumenda dolor, sit itaque magnam fuga debitis
+        sapiente?
+      </p>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+        soluta tempore facilis doloremque. Quasi, nisi error labore iure ut rem,
+        pariatur, laudantium ducimus repudiandae cupiditate vitae cum. Error,
+        libero tempora?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum labore
+        sapiente aliquid, ipsa tempora et architecto? Optio vel perferendis
+        tempora sint, modi dolorem dicta pariatur quidem, neque eaque a
+        voluptas.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam
+        dignissimos alias quidem, consectetur doloribus aperiam perspiciatis
+        suscipit quo molestiae! Consequatur perspiciatis tenetur numquam quae
+        deleniti nesciunt enim officia ea. Reprehenderit.
+      </p>
+      <img
+        src="assets/puesta.png"
+        alt="Puesta de sol"
+        class="float-right shape-2"
+      />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
+        minima voluptatum eum consectetur deserunt, enim in tempore laboriosam?
+        Quam rerum fugit quis assumenda dolor, sit itaque magnam fuga debitis
+        sapiente?
+      </p>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+        soluta tempore facilis doloremque. Quasi, nisi error labore iure ut rem,
+        pariatur, laudantium ducimus repudiandae cupiditate vitae cum. Error,
+        libero tempora?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum labore
+        sapiente aliquid, ipsa tempora et architecto? Optio vel perferendis
+        tempora sint, modi dolorem dicta pariatur quidem, neque eaque a
+        voluptas.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam
+        dignissimos alias quidem, consectetur doloribus aperiam perspiciatis
+        suscipit quo molestiae! Consequatur perspiciatis tenetur numquam quae
+        deleniti nesciunt enim officia ea. Reprehenderit.
+      </p>
+      <img
+        src="assets/puesta.png"
+        alt="Puesta de sol"
+        class="float-left shape-3"
+      />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
+        minima voluptatum eum consectetur deserunt, enim in tempore laboriosam?
+        Quam rerum fugit quis assumenda dolor, sit itaque magnam fuga debitis
+        sapiente?
+      </p>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+        soluta tempore facilis doloremque. Quasi, nisi error labore iure ut rem,
+        pariatur, laudantium ducimus repudiandae cupiditate vitae cum. Error,
+        libero tempora?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum labore
+        sapiente aliquid, ipsa tempora et architecto? Optio vel perferendis
+        tempora sint, modi dolorem dicta pariatur quidem, neque eaque a
+        voluptas.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam
+        dignissimos alias quidem, consectetur doloribus aperiam perspiciatis
+        suscipit quo molestiae! Consequatur perspiciatis tenetur numquam quae
+        deleniti nesciunt enim officia ea. Reprehenderit.
+      </p>
+    </article>
+    <a href="index.html#inicio">☝️</a>
+  </body>
+</html>

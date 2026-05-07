@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularios en CSS</title>
+    <link rel="stylesheet" href="css/forms.css" />
+  </head>
+  <body>
+    <h1>Formularios en CSS</h1>
+    <h2 id="formularios">Formularios</h2>
+    <form
+      class="contact-form"
+      action="https://formsfubmit.co/your@email.com"
+      method="POST"
+    >
+      <input type="text" placeholder="Tu nombre" required />
+      <input
+        type="mail"
+        name="correo"
+        placeholder="Escribe tu correo"
+        required
+      />
+      <input type="submit" />
+      <input type="reset" />
+      <textarea
+        name="comentarios"
+        placeholder="Escribre tus comentarios"
+        cols="30"
+        rows="10"
+        required
+      ></textarea>
+    </form>
+    <a href="index.html#inicio">☝️</a>
+  </body>
+</html>

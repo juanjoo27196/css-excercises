@@ -1,0 +1,90 @@
+.static {
+  background-color: yellow;
+  position: static;
+  top: 10px;
+  left: 10px;
+}
+.relative {
+  background-color: lightpink;
+  position: relative;
+  width: 300px;
+  height: 50px;
+  top: 20px;
+  left: 250px;
+}
+.absolute {
+  background-color: tomato;
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  top: 10px;
+  left: 350px;
+}
+.relative-parent {
+  background-color: lightskyblue;
+  position: relative;
+  width: 600px;
+  height: 50px;
+  top: 50px;
+  left: 50px;
+}
+.absolute-child {
+  background-color: lightslategray;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.fixed {
+  background-color: lightgreen;
+  position: fixed;
+  width: 300px;
+  height: 100px;
+  right: 20px;
+  bottom: 10px;
+}
+.sticky {
+  background-color: black;
+  color: white;
+  position: sticky;
+  top: 50px;
+}
+.sticky-parent {
+  border: thin dashed black;
+  height: 600px;
+}
+.sticky-child {
+  background-color: lightcoral;
+  position: sticky;
+  top: 75px;
+}
+.z-index-1,
+.z-index-2 {
+  background-color: lightsalmon;
+  border: thin solid black;
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+.z-index-1 {
+  z-index: 2;
+}
+.z-index-2 {
+  z-index: -1;
+  top: -200px;
+  left: 100px;
+}
+.z-index-parent {
+  background-color: fuchsia;
+  width: 300px;
+  height: 300px;
+  position: relative;
+}
+.z-index-child {
+  background-color: violet;
+  width: 150px;
+  height: 150px;
+  position: relative;
+  top: -75px;
+  left: 75px;
+  z-index: -3; /**Un elemento hijo para que funcione su z-index, el elemento padre no tiene que tener z-index aplicado y el elemento hijo debe tener valor negativo**/
+}

@@ -1,0 +1,76 @@
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+}
+/*Maquetación de cada diapositiva*/
+.slides {
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll; /*Muy importante*/
+  scroll-snap-type: block mandatory;
+}
+.slide-container {
+  width: 80%; /*Para que cada texto no ocupe el 100% del ancho y se vea mejor*/
+  height: inherit;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 3vw;
+  color: #d9e;
+}
+.slide {
+  width: 100%;
+  height: inherit;
+  background-color: #1e2345;
+  scroll-snap-align: center;
+}
+.slide:nth-child(even) {
+  background-color: #108ed4;
+}
+/*Desde aqui comienza el carrusel del slide 1*/
+.carousel {
+  border: thick solid #d938f0;
+  display: flex;
+  width: 50%;
+  height: 50vh;
+  overflow-x: hidden;
+}
+.carousel-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 100%);
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-snap-type: x proximity;
+}
+.carousel-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #108ed4;
+  scroll-snap-align: center;
+}
+.carousel-slide:nth-child(even) {
+  background-color: #1e2345;
+}
+/*Hasta aqui es el carrusel*/
+/*Para que el h1 tenga un color degradado*/
+.gradient-text {
+  background-image: linear-gradient(45deg, magenta, yellow);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

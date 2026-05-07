@@ -1,0 +1,63 @@
+.box {
+  margin: 2rem auto;
+  width: 300px;
+  height: 300px;
+  border: thick dashed red;
+}
+.bg-color {
+  background-color: black;
+}
+.bg-image {
+  background-image: url("../assets/puesta.png");
+}
+.bg-size {
+  background-image: url("../assets/puesta.png");
+  background-size: cover;
+}
+.bg-repeat {
+  background-image: url("../assets/puesta.png");
+  background-size: 100px;
+  background-repeat: repeat;
+  /*background-repeat: no-repeat;
+  background-repeat: repeat-x;
+  background-repeat: repeat-y;*/
+}
+.bg-position {
+  background-image: url("../assets/puesta.png");
+  background-color: skyblue;
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: 10px 20px;
+}
+.bg-clip {
+  background-image: url("../assets/puesta.png");
+  background-color: skyblue;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 200px;
+  background-clip: padding-box;
+  /*background-clip: border-box;<====comienza desde el borde, es el que esta por defecto
+  background-clip: content-box;<======comienza desde el contenido*/
+  padding: 1rem;
+}
+.bg-origin {
+  background-image: url("../assets/puesta.png");
+  background-color: skyblue;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 200px;
+  padding: 1rem;
+  background-origin: border-box;
+  /*background-origin:padding-box;<====defecto
+  background-origin:content-box;*/
+}
+.bg-attachment {
+  background-image: url("../assets/puesta.png");
+  background-color: skyblue;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 50vh;
+  background-attachment: fixed;
+}
+/*Podemos agregar imagenes multiples como jon Mircha explica en el video 3 de css en la hora 6 y minuto 52*/

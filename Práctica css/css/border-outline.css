@@ -1,0 +1,29 @@
+.box {
+  background-color: black;
+  margin: 2rem auto;
+  width: 400px;
+  height: 400px;
+  border: thick solid red;
+}
+.border-radius {
+  border-radius: 1rem;
+}
+.border-radius-2 {
+  border-radius: 2rem / 4rem;
+} /*<===Este es un borde eliptico*/
+.border-radius-3 {
+  border-radius: 50%;
+} /*<===Este es un borde circular*/
+.border-radius-4 {
+  width: 400px;
+  height: 200px;
+  border-radius: 50%;
+} /*<===Elipse horizontal*/
+.outline {
+  color: white;
+  text-align: center;
+  outline-width: 5px;
+  outline-style: dashed;
+  outline-color: chartreuse;
+  outline: thick solid blue;
+}

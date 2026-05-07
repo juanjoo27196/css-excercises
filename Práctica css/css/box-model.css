@@ -1,0 +1,109 @@
+h1 {
+  width: 400px;
+  height: 200px;
+  border-width: 3px;
+  border-style: solid;
+}
+h2 {
+  background-color: lightsalmon;
+}
+.caja-uno,
+.caja-dos {
+  background-color: chocolate;
+  border: medium solid orange;
+  padding: 20px 40px;
+  margin: 40px 20px;
+}
+.caja-bloque,
+.caja-linea {
+  background-color: orangered;
+  width: 500px;
+  height: 250px;
+  padding: 16px;
+  border: medium solid black;
+}
+.caja-bloque {
+  margin: 32px;
+}
+.caja-linea {
+  margin: 48px;
+}
+.caja-none,
+.caja-bloque-linea,
+.caja-hidden {
+  background-color: olive;
+  color: white;
+  width: 600px;
+  height: 300px;
+  border: medium solid black;
+}
+.caja-bloque-linea {
+  display: inline-block;
+}
+.caja-none {
+  display: none;
+}
+.caja-hidden {
+  visibility: hidden;
+}
+.overflow {
+  background-color: darkorange;
+  width: 200px;
+  height: 100px;
+  overflow: visible;
+  overflow: hidden;
+  overflow: scroll;
+  /**overflow-x: scroll; overflow-y: scroll; overflow: auto;**/
+}
+.box-sizing-content,
+.box-sizing-border {
+  background-color: cyan;
+  box-sizing: content-box;
+  width: 500px;
+  height: 250px;
+  padding: 10px;
+  border: thick solid black;
+}
+.box-sizing-border {
+  box-sizing: border-box;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+.container-floats {
+  background-color: palegreen;
+}
+.float-right {
+  float: right;
+}
+.float-left {
+  float: left;
+}
+.margin-collapse {
+  background-color: lightcoral;
+}
+.margin-collapse section {
+  border: thin solid black;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.margin-collapse span {
+  display: inline-block;
+  margin-right: 16px;
+  margin-left: 16px;
+  border: thin solid black;
+} /**<============Se estan sumando la cantidad de pixeles que tienen de margen a la izquierda y a la derecha**/
+.sitio-web {
+  border: thin solid black;
+  background-color: lightskyblue;
+  width: 800px;
+  height: 1000px;
+  padding: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}

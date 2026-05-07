@@ -1,0 +1,153 @@
+/*mdn css para aprender css*/
+h1 {
+  color: lightblue;
+  background-color: black;
+  border-color: deeppink;
+  border-style: solid;
+  text-align: center;
+}
+h2 {
+  color: red;
+  background-color: cyan;
+}
+h3 {
+  color: red;
+  background-color: lime;
+}
+h4 {
+  color: orangered;
+  background-color: black;
+}
+.bg-skyblue {
+  background-color: skyblue;
+}
+.bg-red {
+  background-color: red;
+}
+.text-white {
+  color: white;
+}
+.text-20 {
+  font-size: 20px;
+}
+.text-32 {
+  font-size: 32px;
+}
+.hijos-directos > li {
+  background-color: thistle;
+}
+.hijos-descendientes b {
+  background-color: thistle;
+}
+.hermanos-general ~ li {
+  background-color: blue;
+}
+.hermanos-adyascentes + li {
+  background-color: coral;
+}
+.selectores-atributo a[href] {
+  color: orangered;
+}
+/**Selector Universal (*)**/
+* {
+  font-family: sans-serif;
+}
+.selector-universal * {
+  font-size: 24px;
+}
+/**Peusoclases= Dan estilo de acuerdo a la posicion, contexto o estado del elemento**/
+.form-pseudoclases *:required {
+  border-color: yellow;
+}
+.form-pseudoclases *:valid {
+  border-color: green;
+}
+.form-pseudoclases *:invalid {
+  border-color: red;
+}
+.menu-pseudoclases a:visited {
+  color: olive;
+}
+.menu-pseudoclases a:hover {
+  color: pink;
+}
+.p-pseudoclases:hover {
+  font-size: 20px;
+}
+#inicio:target {
+  background-color: lightgreen;
+}
+.lista-pseudoclases li:first-child {
+  color: green;
+}
+.lista-pseudoclases li:nth-child(4n) {
+  color: blue;
+}
+.lista-pseudoclases li:nth-child(3n) {
+  color: red;
+}
+.lista-pseudoclases li:nth-child(even) {
+  background-color: yellow;
+}
+.articulo-pseudoclases p:first-of-type {
+  background-color: pink;
+}
+.articulo-pseudoclases p:last-of-type {
+  background-color: purple;
+  color: white;
+}
+.articulo-pseudoclases *:not(p) {
+  background-color: orangered;
+  color: white;
+}
+.saga-geminis::before {
+  content: "🙃";
+}
+.saga-geminis::after {
+  content: "❤️";
+}
+.saga-precio::before {
+  content: "$";
+  font-weight: bold;
+}
+.saga-precio::after {
+  content: "USD";
+  font-weight: bold;
+}
+.p-pseudoelementos::first-letter {
+  font-size: 32px;
+  font-weight: bold;
+}
+.p-pseudoelementos::first-line {
+  background-color: coral;
+}
+.p-pseudoelementos::selection {
+  color: green;
+  background-color: black;
+}
+.input-pseudoelemtos::placeholder {
+  color: red;
+}
+.form-agrupar-selectores input[type="text"],
+.form-agrupar-selectores input[type="email"],
+.form-agrupar-selectores textarea {
+  border-color: yellow;
+  border-width: 2px;
+  border-style: dashed;
+  background-color: black;
+  font-size: 20px;
+  display: block;
+  width: 300px;
+}
+blockquote {
+  background-color: burlywood;
+}
+.cita-marco {
+  background-color: cornflowerblue;
+}
+blockquote.cita-marco {
+  background-color: lightsalmon;
+} /**<============Le esta aplicando este por mayor especificidad**/
+.cita-marco cite {
+  background-color: red;
+}

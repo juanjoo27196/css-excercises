@@ -1,0 +1,96 @@
+/*Hack de box-sizing*/
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+.pixels {
+  background-color: cadetblue;
+  width: 500px;
+  height: 400px;
+  padding: 20px;
+  font-size: 32px;
+  text-align: center;
+  border: thick solid hotpink;
+}
+.ems {
+  background-color: cadetblue;
+  padding: 1em 0.5em;
+  font-size: 24px;
+  text-align: center;
+  border: thick solid hotpink;
+}
+.ems-child {
+  background-color: aqua;
+  border: thick solid beige;
+  font-size: 2em;
+  margin: 0.5em;
+  padding: 1em;
+}
+.rems {
+  background-color: cadetblue;
+  padding: 1rem 0.5rem;
+  font-size: 24px;
+  text-align: center;
+  border: thick solid hotpink;
+}
+.rems-child {
+  background-color: aqua;
+  border: thick solid beige;
+  font-size: 2rem;
+  margin: 0.5rem;
+  padding: 1rem;
+}
+.exs {
+  background-color: cadetblue;
+  padding: 1em 0.5em;
+  font-size: 24px;
+  text-align: center;
+  border: thick solid hotpink;
+}
+.ex-child {
+  background-color: aqua;
+  border: thick solid beige;
+  font-size: 2em;
+  margin: 0.5em;
+  padding: 1em;
+}
+.chs {
+  background-color: cadetblue;
+  width: 10ch;
+  text-align: center;
+  border: thick solid hotpink;
+}
+.percentages {
+  background-color: darkgoldenrod;
+  padding: 5%;
+  width: 80%;
+  margin: 2% 1%;
+}
+.height-parent {
+  background-color: brown;
+  width: 500px;
+  height: 500px;
+}
+.height-child {
+  background-color: coral;
+  width: 50%;
+  height: 50%;
+}
+.viewport {
+  background-color: darkcyan;
+  /*font-size: 5vw;*/
+  width: 50vw;
+  height: 50vh;
+}
+.vmin,
+.vmax {
+  background-color: darksalmon;
+  border: thick solid cyan;
+  width: 50vmax;
+  height: 50vmin;
+}
